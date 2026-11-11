@@ -1,31 +1,42 @@
-# Reese Cox
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/terminal-mobile-dark.svg">
+  <source media="(prefers-color-scheme: light) and (max-width: 640px)" srcset="assets/terminal-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-desktop-dark.svg">
+  <img src="assets/terminal-desktop-light.svg" width="1120" alt="Reese Cox. Native Mac apps and local-first tools. ChordShot, Nodetaker, and Password Anywhere.">
+</picture>
 
-I build native Mac apps and tools that keep work close at hand.
+I build native Mac apps and practical tools, with an interest in local files and thoughtful desktop interactions.
 
-My projects range from a keyboard shortcut for generating a password to a spatial canvas for organizing notes and files. I'm interested in thoughtful desktop interactions, local storage, and the details that make a small tool useful every day.
+### On the workbench
 
-### Selected work
-
-| Project | What it does | Explore |
+| Project | The idea | Try it |
 | :--- | :--- | :--- |
-| **ChordShot** | Capture a region with a mouse chord or trackpad gesture. Press Space during selection to switch from a screenshot to a silent recording. | [Free Mac beta](https://github.com/rcox-shome/chordshot-releases) |
-| **Nodetaker** | Organize notes, media, and connections on a spatial canvas, with a local Markdown vault. | [Overview & downloads](https://github.com/rcox-shome/nodetaker-releases) |
-| **Password Anywhere** | Generate a password from a global shortcut, with native macOS integration and clipboard cleanup that preserves anything copied afterward. | [Source](https://github.com/rcox-shome/password-anywhere) |
+| **ChordShot** | Hold, drag, capture. A mouse chord or trackpad gesture becomes a screenshot; Space switches the selection to silent video. | [Free Mac beta](https://github.com/rcox-shome/chordshot-releases) |
+| **Nodetaker** | Give your notes room to think. Arrange notes, media, and connections on a spatial canvas backed by a local Markdown vault. | [Overview & downloads](https://github.com/rcox-shome/nodetaker-releases) |
+| **Password Anywhere** | Generate a password from a global shortcut. Native macOS integration, no third-party packages, and clipboard cleanup that preserves newer content. | [Source](https://github.com/rcox-shome/password-anywhere) |
+
+### Under the hood
+
+Password Anywhere is a small Swift codebase you can read end to end. Two places to start: [unbiased random-number selection](https://github.com/rcox-shome/password-anywhere/blob/main/PasswordAnywhere/PasswordGenerator/SecureRandom.swift) and [guarded clipboard cleanup](https://github.com/rcox-shome/password-anywhere/blob/main/PasswordAnywhere/Clipboard/ClipboardManager.swift).
+
+I'd like to compare notes with people building Mac utilities and local-first software. [Try ChordShot and share what you think](https://github.com/rcox-shome/chordshot-releases/issues/new?template=beta-feedback.yml), or [contribute to Password Anywhere](https://github.com/rcox-shome/password-anywhere/blob/main/CONTRIBUTING.md).
+
+<details>
+<summary>A look at Nodetaker</summary>
 
 [![A sample planning map in Nodetaker, with connected notes arranged on a spatial canvas](https://nodetakerapp.com/screens/hero-app.jpg)](https://github.com/rcox-shome/nodetaker-releases)
 
-<sub>Nodetaker sample canvas, shown in the v0.2.0 beta interface.</sub>
+<sub>Example content in the v0.2.0 beta interface. Current releases are linked above.</sub>
 
-### A few details worth exploring
+</details>
 
-- **Small, inspectable code.** Password Anywhere uses Swift, SwiftUI, and AppKit without third-party packages. Start with its [random-number generation](https://github.com/rcox-shome/password-anywhere/blob/main/PasswordAnywhere/PasswordGenerator/SecureRandom.swift) or [clipboard cleanup](https://github.com/rcox-shome/password-anywhere/blob/main/PasswordAnywhere/Clipboard/ClipboardManager.swift).
-- **Interaction is part of the product.** ChordShot turns selection, capture, and recording into one gesture-driven workflow.
-- **Files you can keep working with.** Nodetaker brings a visual workspace to notes stored as Markdown.
+<details>
+<summary>How this profile works</summary>
 
-### Compare notes
+An original Python generator turns public GitHub data and an ASCII version of my avatar into SVGs for dark, light, and mobile layouts. GitHub Actions refreshes the public repo count, detected languages, and release versions daily.
 
-I'd like to connect with people building Mac utilities, local-first applications, and thoughtful tools for everyday work.
+[Generator & data notes](docs/PROFILE.md) · Terminal-profile inspiration: [Andrew Grant](https://github.com/Andrew6rant/Andrew6rant).
 
-Try [ChordShot](https://github.com/rcox-shome/chordshot-releases), share [beta feedback](https://github.com/rcox-shome/chordshot-releases/issues/new?template=beta-feedback.yml), or explore [Password Anywhere's contribution guide](https://github.com/rcox-shome/password-anywhere/blob/main/CONTRIBUTING.md).
+</details>
 
 <sub>Password Anywhere is open source. ChordShot and Nodetaker have public downloads; their application source remains private.</sub>
