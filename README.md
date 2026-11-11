@@ -9,8 +9,12 @@ My projects range from a keyboard shortcut for generating a password to a spatia
 | Project | What it does | Explore |
 | :--- | :--- | :--- |
 | **ChordShot** | Capture a region with a mouse chord or trackpad gesture. Press Space during selection to switch from a screenshot to a silent recording. | [Free Mac beta](https://github.com/rcox-shome/chordshot-releases) |
-| **Nodetaker** | Organize notes, media, and connections on a spatial canvas, with a local Markdown vault. | [Releases](https://github.com/rcox-shome/nodetaker-releases/releases) |
+| **Nodetaker** | Organize notes, media, and connections on a spatial canvas, with a local Markdown vault. | [Overview & downloads](https://github.com/rcox-shome/nodetaker-releases) |
 | **Password Anywhere** | Generate a password from a global shortcut, with native macOS integration and clipboard cleanup that preserves anything copied afterward. | [Source](https://github.com/rcox-shome/password-anywhere) |
+
+[![A sample planning map in Nodetaker, with connected notes arranged on a spatial canvas](https://nodetakerapp.com/screens/hero-app.jpg)](https://github.com/rcox-shome/nodetaker-releases)
+
+<sub>Nodetaker sample canvas, shown in the v0.2.0 beta interface.</sub>
 
 ### A few details worth exploring
 
