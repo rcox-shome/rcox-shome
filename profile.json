@@ -6,5 +6,5 @@
   "desktop": "Swift / SwiftUI / AppKit",
   "approach": "Useful tools. Thoughtful details.",
   "open_code": "Password Anywhere / MIT",
-  "releases": ["chordshot-releases", "nodetaker-releases"]
+  "releases": ["chordshot-releases", "nodetaker-releases", "folder-reader-releases"]
 }

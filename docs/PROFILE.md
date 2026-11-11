@@ -16,7 +16,7 @@ The generator uses unauthenticated public GitHub REST endpoints. It does not rec
 
 Name, focus, desktop stack, and other editorial text live in [profile.json](../profile.json). They do not change automatically.
 
-The workflow's standard GitHub token has contents-write access to this profile repository so it can commit generated files. Data collection uses no authentication. No ChordShot or Nodetaker application code is part of this repository.
+The workflow's standard GitHub token has contents-write access to this profile repository so it can commit generated files. Data collection uses no authentication. No ChordShot, Nodetaker, or Folder Reader application code is part of this repository.
 
 ## Reproduce
 

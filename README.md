@@ -2,7 +2,7 @@
   <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/terminal-mobile-dark.svg">
   <source media="(prefers-color-scheme: light) and (max-width: 640px)" srcset="assets/terminal-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-desktop-dark.svg">
-  <img src="assets/terminal-desktop-light.svg" width="1120" alt="Reese Cox. Native Mac apps and local-first tools. ChordShot, Nodetaker, and Password Anywhere.">
+  <img src="assets/terminal-desktop-light.svg" width="1120" alt="Reese Cox. Native Mac apps and local-first tools. ChordShot, Nodetaker, Folder Reader, and Password Anywhere.">
 </picture>
 
 I build native Mac apps and practical tools, with an interest in local files and thoughtful desktop interactions.
@@ -13,6 +13,7 @@ I build native Mac apps and practical tools, with an interest in local files and
 | :--- | :--- | :--- |
 | **ChordShot** | Hold, drag, capture. A mouse chord or trackpad gesture becomes a screenshot; Space switches the selection to silent video. | [Free Mac beta](https://github.com/rcox-shome/chordshot-releases) |
 | **Nodetaker** | Give your notes room to think. Arrange notes, media, and connections on a spatial canvas backed by a local Markdown vault. | [Overview & downloads](https://github.com/rcox-shome/nodetaker-releases) |
+| **Folder Reader** | A bookmark for the whole folder. Read mixed files in one Mac window, remember your PDF page, and track what you have reviewed. | [Experimental preview](https://github.com/rcox-shome/folder-reader-releases) |
 | **Password Anywhere** | Generate a password from a global shortcut. Native macOS integration, no third-party packages, and clipboard cleanup that preserves newer content. | [Source](https://github.com/rcox-shome/password-anywhere) |
 
 ### Under the hood
@@ -39,4 +40,4 @@ An original Python generator turns public GitHub data and an ASCII version of my
 
 </details>
 
-<sub>Password Anywhere is open source. ChordShot and Nodetaker have public downloads; their application source remains private.</sub>
+<sub>Password Anywhere is open source. ChordShot, Nodetaker, and Folder Reader have public downloads; their application source remains private. Folder Reader is an experimental, unnotarized preview.</sub>

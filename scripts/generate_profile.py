@@ -91,10 +91,10 @@ def clip(value, limit=46):
 def render(config, data, art, dark=True, mobile=False):
     colors = ({"bg": "#0d1117", "bar": "#161b22", "border": "#30363d", "text": "#d7e0ea", "muted": "#8b9aab", "accent": "#75e4cd", "key": "#c4a2f5", "white": "#f0f6fc"}
               if dark else {"bg": "#f6f8fa", "bar": "#eaeef2", "border": "#c7ced7", "text": "#283342", "muted": "#5d6b7a", "accent": "#087c6c", "key": "#7550ad", "white": "#17212d"})
-    width, height = (560, 1060) if mobile else (1120, 650)
+    width, height = (560, 1092) if mobile else (1120, 682)
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
            '<title id="title">Reese Cox — native Mac apps and local-first tools</title>',
-           f'<desc id="desc">ASCII artwork of the current GitHub robot avatar. {data["public_repos"]} public repositories. ChordShot {escape(data["releases"]["chordshot-releases"]["tag"])} and Nodetaker {escape(data["releases"]["nodetaker-releases"]["tag"])}. Public data updated {data["updated"]}.</desc>',
+           f'<desc id="desc">ASCII artwork of the current GitHub robot avatar. {data["public_repos"]} public repositories. ChordShot {escape(data["releases"]["chordshot-releases"]["tag"])} Nodetaker {escape(data["releases"]["nodetaker-releases"]["tag"])}, and Folder Reader {escape(data["releases"]["folder-reader-releases"]["tag"])}. Public data updated {data["updated"]}.</desc>',
            '<style>text{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-variant-ligatures:none}.cursor{animation:blink 1.4s steps(1) infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.cursor{animation:none}}</style>',
            f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="14" fill="{colors["bg"]}" stroke="{colors["border"]}"/>',
            f'<path d="M15 1H{width-15}Q{width-1} 1 {width-1} 15V49H1V15Q1 1 15 1" fill="{colors["bar"]}"/>',
@@ -128,6 +128,7 @@ def render(config, data, art, dark=True, mobile=False):
 
     chord = data["releases"]["chordshot-releases"]
     node = data["releases"]["nodetaker-releases"]
+    folder = data["releases"]["folder-reader-releases"]
     rows = [
         ("Name", config["name"]),
         ("Focus", config["focus"]),
@@ -135,14 +136,15 @@ def render(config, data, art, dark=True, mobile=False):
         ("Approach", config["approach"]),
         ("ChordShot", clip(chord["tag"], 20) + (" / public beta" if chord["prerelease"] else " / Mac release")),
         ("Nodetaker", clip(node["tag"], 20) + (" / public beta" if node["prerelease"] else " / Mac release")),
+        ("Folder Reader", clip(folder["tag"], 20) + (" / preview" if folder["prerelease"] else " / Mac release")),
         ("Open code", config["open_code"]),
     ]
     for i, (label, value) in enumerate(rows):
         y = start + 54 + i*(29 if mobile else 32)
         text(x, y, label, 15 if mobile else 15, "key")
-        text(x+123, y, clip(value, 35 if mobile else 46), 16 if mobile else 16, "text")
+        text(x+142, y, clip(value, 35 if mobile else 46), 16, "text")
 
-    stat_y = 893 if mobile else 458
+    stat_y = 925 if mobile else 490
     rule(x, stat_y-24, width-30)
     text(x, stat_y, "PUBLIC GITHUB", 11, "muted", extra='letter-spacing="2"')
     langs = ["JS" if n == "JavaScript" else n for n in data["languages"]]
@@ -156,7 +158,7 @@ def render(config, data, art, dark=True, mobile=False):
     for i, (label, value) in enumerate(stats):
         y = stat_y+32+i*29
         text(x, y, label, 15, "key")
-        text(x+123, y, clip(value, 35 if mobile else 46), 16, "text")
+        text(x+142, y, clip(value, 35 if mobile else 46), 16, "text")
 
     rule(22, height-48, width-22)
     text(28, height-20, "~ % build something useful", 13, "muted")
