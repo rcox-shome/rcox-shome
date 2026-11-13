@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="1092" viewBox="0 0 560 1092" role="img" aria-labelledby="title desc">
 <title id="title">Reese Cox — native Mac apps and local-first tools</title>
-<desc id="desc">ASCII artwork of the current GitHub robot avatar. 7 public repositories. ChordShot v1.3.0 Nodetaker v0.2.5, and Folder Reader v0.1.2. Public data updated 2026-11-12.</desc>
+<desc id="desc">ASCII artwork of the current GitHub robot avatar. 7 public repositories. ChordShot v1.3.0 Nodetaker v0.2.5, and Folder Reader v0.1.2. Public data updated 2026-11-13.</desc>
 <style>text{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-variant-ligatures:none}.cursor{animation:blink 1.4s steps(1) infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.cursor{animation:none}}</style>
 <rect x="1" y="1" width="558" height="1090" rx="14" fill="#0d1117" stroke="#30363d"/>
 <path d="M15 1H545Q559 1 559 15V49H1V15Q1 1 15 1" fill="#161b22"/>
@@ -79,7 +79,7 @@
 <text x="30" y="986" fill="#c4a2f5" font-size="15" font-weight="400" >Languages</text>
 <text x="172" y="986" fill="#d7e0ea" font-size="16" font-weight="400" >Swift / HTML / CSS / JS</text>
 <text x="30" y="1015" fill="#c4a2f5" font-size="15" font-weight="400" >Updated</text>
-<text x="172" y="1015" fill="#d7e0ea" font-size="16" font-weight="400" >2026-11-12 UTC</text>
+<text x="172" y="1015" fill="#d7e0ea" font-size="16" font-weight="400" >2026-11-13 UTC</text>
 <path d="M22 1044H538" stroke="#30363d"/>
 <text x="28" y="1072" fill="#8b9aab" font-size="13" font-weight="400" >~ % build something useful</text>
 <rect class="cursor" x="239" y="1061" width="8" height="14" rx="1" fill="#75e4cd"/>
